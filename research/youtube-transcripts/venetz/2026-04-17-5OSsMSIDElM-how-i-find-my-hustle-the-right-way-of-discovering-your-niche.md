@@ -1,0 +1,19 @@
+---
+channel: venetz
+video_id: 5OSsMSIDElM
+url: https://www.youtube.com/watch?v=5OSsMSIDElM
+title: "How I Find My Hustle! The right way of discovering your niche! #podcast #shorts"
+published: 2026-04-17
+fetched: 2026-04-17
+---
+
+# Transcript
+
+[00:00] what's your best piece of advice for finding that Niche that that they could ultimately that they're excited about but they could also try to start making some income too because there's like a million different things that can't that people can do but where are people going to spend their time and where's the expertise and where's your credibility or all other big questions that get in the way of that but what's your advice on how somebody can nich to what their side business or what their their company would look like yeah I spent an incredible amount of time thinking about this 
+[00:30] because we have this very weird narrative in our like American capitalist society that things should be hard right like like if it's going to be rewarding it's gonna have to be hard and I'm not discounting the value of hard work but like if the thing that you are considering as your entrepreneurial journey is just a slog like you just you dress doing it you're constantly 
+[01:02] procrastinating it doesn't light you up it shouldn't be that hard folks like it shouldn't be hard in that way so I I would encourage folks to get really clear and you you see that I did not make this like sort of thought exercise up you see it in books like iy guy or and think like a monk um but it's that that confluence uh work that truly lights you up like work that feels like 
+[01:34] a sacred calling for me that is sharing knowledge I think for you it's very similar Tyler like you are really lit up by the opportunity to share knowledge in a way that elevates other people right so like getting super clear on the work that feels most meaningful to you the the work that Sparks the most joy for you the work that people will pay you for because like I can like making really bad artart with too much Elmer's glue but like nobody's buying it it's 
+[02:06] really really bad I don't even share it with like my mom um so it's like work that people will pay you for work that you have the skill sets to do right on that credibility piece and then certainly work that Sparks Joy like what where is that overlap um one of the other companies that founded as a monetized like patreon Business book club community and we actually read both think like a monk and 
+[02:36] iy guy this year and I did the journal for iy guy and it's very short you do not need to read the book to do the journal so if folks are asking them that exact question asking themselves that exact question buy the journal it's like $9 go through the exercises and it might help you uncover areas of joy that you wouldn't necessarily think could be businesses but certainly are things that you can make into business like if 
+[03:06] somebody would have told me a few years ago that I would have like over a hundred paid Subs in a business Book Club Community I would have been like you're out of your damn mind nobody's gonna pay me $5 a month to come read a book with me like but I love reading like so me when I did the mapping so many of the things came back to like reading books talking about books like encouraging other people to read books summarizing books and sharing 
+[03:37] the knowledge and I was like well why don't I see if I can make this into an income stream and so I did and certainly like that's not going to be enough income to pay a mortgage but maybe that's what gets you started that you do while you're still in your corporate job getting that pay chat that helps spark and like you know stoke the entrepreneurial flame and it creates the opportunity for what's
