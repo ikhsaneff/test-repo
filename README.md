@@ -19,19 +19,19 @@ Final list: Jason Bay, Josh Braun, Jed Mahrle, Florin Tatulea, Will Allred, Lesl
 
 ## Where each expert actually publishes
 
-Earlier drafts of this project assumed YouTube was the primary video channel for all 10 experts. It isn't. Most publish primarily on LinkedIn, with a podcast or newsletter as secondary. The collection strategy reflects that.
+Earlier drafts of this project assumed YouTube was the primary video channel for all 10 experts. It isn't. Most publish primarily on LinkedIn, with YouTube or a long-form blog as secondary. The collection strategy reflects that.
 
 | Expert            | Primary        | Secondary        | Automation                        |
 |-------------------|----------------|------------------|-----------------------------------|
-| Jason Bay         | Podcast        | LinkedIn         | `scrape_linkedin.py` (podcast out of scope) |
-| Josh Braun        | LinkedIn       | Newsletter, YT   | `scrape_linkedin.py`              |
-| Jed Mahrle        | Newsletter     | LinkedIn         | `scrape_linkedin.py`              |
+| Jason Bay         | LinkedIn       | Blog             | `scrape_linkedin.py`              |
+| Josh Braun        | LinkedIn       | YouTube          | `scrape_linkedin.py`              |
+| Jed Mahrle        | LinkedIn       |                  | `scrape_linkedin.py`              |
 | Florin Tatulea    | LinkedIn       | Common Room blog | `scrape_linkedin.py`              |
 | Will Allred       | LinkedIn       | Lavender blog    | `scrape_linkedin.py` + manual     |
 | Leslie Venetz     | LinkedIn       | Book, YT         | `scrape_linkedin.py` + `fetch_youtube_transcripts.py` |
 | Morgan Ingram     | YouTube        | LinkedIn         | `fetch_youtube_transcripts.py`    |
-| Nick Cegelski     | Podcast        | LinkedIn, YT     | `scrape_linkedin.py` + `fetch_youtube_transcripts.py` (podcast out of scope) |
-| Armand Farrokh    | Podcast        | LinkedIn         | `scrape_linkedin.py` (podcast out of scope) |
+| Nick Cegelski     | YouTube        | LinkedIn         | `scrape_linkedin.py` + `fetch_youtube_transcripts.py` |
+| Armand Farrokh    | LinkedIn       |                  | `scrape_linkedin.py`              |
 | Kyle Coleman      | LinkedIn       | Copy.ai blog     | `scrape_linkedin.py` + manual     |
 
 ## Repo structure
@@ -52,30 +52,3 @@ scripts/
 ├── scrape_linkedin.py               # Attaches to running Chrome via CDP; humanlike pacing
 └── requirements.txt
 ```
-
-## Collection approach
-
-### Automated
-
-- **YouTube (Morgan Ingram, 30MPC, Leslie Venetz).** `scripts/fetch_youtube_transcripts.py` takes channel handles, resolves to channel IDs, parses the RSS feed, and pulls transcripts for the latest 8 videos per channel via `youtube-transcript-api`. No API key. Rerun-safe.
-- **LinkedIn (all 10 experts).** Driving a logged-in Chrome session via DOM extraction on each expert's `/recent-activity/all/` page. Five recent substantive posts per expert saved as a consolidated `posts-2026-04-17.md` file with reactions, comment counts, permalinks, and body text.
-
-### Manual
-
-- Long-form blog posts (Lavender, Common Room, Copy.ai). Paste into `research/other/reports/` with the source URL.
-
-### Deliberately out of scope
-
-- Podcast episodes (Outbound Squad, 30MPC). Show notes are only synopsis of audio, not primary material.
-- Newsletter issues (Practical Prospecting, Inside Selling). LinkedIn covers the authors.
-
-## Status
-
-- [x] Topic chosen + rationale documented
-- [x] 10 experts selected with verified 2025 to 2026 activity
-- [x] Repo skeleton with per-expert folders
-- [x] YouTube transcript fetcher
-- [x] LinkedIn scraper (CDP attach)
-- [x] Run YouTube fetcher (17 transcripts across 30mpc, morgan-ingram, venetz)
-- [x] LinkedIn collection (5 posts x 10 experts = 50 posts)
-- [ ] Playbook draft (future milestone)

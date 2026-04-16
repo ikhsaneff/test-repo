@@ -11,23 +11,23 @@ Curated list of 10 practitioners who publish in public. Each entry is honest abo
 
 **Explicitly excluded**: sales "influencers" recycling frameworks with no current practice, course sellers whose only evidence is testimonial screenshots, and anyone not shipping outbound themselves in the last 2 years.
 
-Verified as of **2026-04-16**.
+Verified as of **2026-04-17**.
 
 ## Channel reality check
 
-An earlier draft of this project assumed YouTube was a primary channel for all 10 experts. **It isn't.** After verifying each, most publish primarily on LinkedIn + a podcast or LinkedIn + a newsletter. This file now reflects that reality, and the `research/youtube-transcripts/` subfolder only exists for the four experts who actually maintain active YouTube channels (Morgan Ingram, 30MPC, Leslie Venetz, Josh Braun).
+An earlier draft of this project assumed YouTube was a primary channel for all 10 experts. **It isn't.** After verifying each, most publish primarily on LinkedIn, with YouTube or a long-form blog as secondary. This file now reflects that reality, and the `research/youtube-transcripts/` subfolder only exists for the four experts who actually maintain active YouTube channels (Morgan Ingram, 30MPC, Leslie Venetz, Josh Braun).
 
 | Expert            | Primary        | Secondary        | Where to collect                                           |
 |-------------------|----------------|------------------|------------------------------------------------------------|
-| Jason Bay         | Podcast        | LinkedIn         | `linkedin-posts/bay/` (podcast out of scope)               |
-| Josh Braun        | LinkedIn       | Newsletter, YT   | `linkedin-posts/braun/`, `youtube-transcripts/josh-braun/` |
-| Jed Mahrle        | Newsletter     | LinkedIn         | `linkedin-posts/mahrle/`                                   |
+| Jason Bay         | LinkedIn       | Blog             | `linkedin-posts/bay/`                                      |
+| Josh Braun        | LinkedIn       | YouTube          | `linkedin-posts/braun/`, `youtube-transcripts/josh-braun/` (newsletter not collected) |
+| Jed Mahrle        | LinkedIn       |                  | `linkedin-posts/mahrle/` (newsletter not collected) |
 | Florin Tatulea    | LinkedIn       | Common Room blog | `linkedin-posts/tatulea/`, `other/reports/common-room/`    |
 | Will Allred       | LinkedIn       | Lavender blog    | `linkedin-posts/allred/`, `other/reports/lavender/`        |
 | Leslie Venetz     | LinkedIn       | Book, YouTube    | `linkedin-posts/venetz/`, `other/reports/venetz-book/`, `youtube-transcripts/venetz/` |
 | Morgan Ingram     | YouTube        | LinkedIn         | `youtube-transcripts/morgan-ingram/`, `linkedin-posts/ingram/` |
-| Nick Cegelski     | Podcast        | LinkedIn, YT     | `linkedin-posts/cegelski/`, `youtube-transcripts/30mpc/` (podcast out of scope) |
-| Armand Farrokh    | Podcast        | LinkedIn         | `linkedin-posts/farrokh/` (podcast out of scope)           |
+| Nick Cegelski     | YouTube        | LinkedIn         | `linkedin-posts/cegelski/`, `youtube-transcripts/30mpc/`   |
+| Armand Farrokh    | LinkedIn       |                  | `linkedin-posts/farrokh/`                                  |
 | Kyle Coleman      | LinkedIn       | Copy.ai blog     | `linkedin-posts/coleman/`, `other/reports/copy-ai/`        |
 
 ---
@@ -35,10 +35,9 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 ## 1. Jason Bay, Founder, Outbound Squad
 
 - **LinkedIn:** https://www.linkedin.com/in/jasondbay/
-- **Podcast:** *Outbound Squad* (https://www.outboundsquad.com/podcast)
 - **Website:** https://www.outboundsquad.com/
-- **Primary channel:** Podcast
-- **Secondary:** LinkedIn posts
+- **Primary channel:** LinkedIn
+- **Secondary:** Outbound Squad blog
 
 **Why included:** Runs a training company for B2B SaaS sales teams. His frameworks are tested in customer SDR/AE orgs weekly. Publishes deep breakdowns, not aphorisms.
 
@@ -46,11 +45,11 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Verified recent material to collect:**
 
-- Podcast ep. 392, *"Using voicemails to increase cold email reply rates by 3x"*
-- Podcast ep. 372, *"7 hard truths about outbound in 2025"*
-- Recent episode on why AI isn't replacing SDRs (cites hiring data from AI companies)
+- LinkedIn posts on voicemails as cold-email-reply multipliers
+- LinkedIn posts on "7 hard truths about outbound in 2025"
+- Recent posts on why AI isn't replacing SDRs (cites hiring data from AI companies)
 
-**Collection path:** `scrape_linkedin.py bay`. Podcast episodes are his primary channel but out of scope for this pass (show notes are synopses only).
+**Collection path:** `scrape_linkedin.py bay`.
 
 ## 2. Josh Braun, Founder, Josh Braun Sales Training
 
@@ -71,7 +70,7 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 - *30 Minutes to President's Club* ep. 63, *"Poking the Bear to create more conversations"*
 - *Ditch The Pitch, Josh Braun Says Poke The Bear Instead!* on *My Sales Coach*
 
-**Collection path:** `scrape_linkedin.py braun` is the main move. YouTube is short-form clips and is optional; run `fetch_youtube_transcripts.py josh-braun` if you want them.
+**Collection path:** `scrape_linkedin.py braun` is the main move. YouTube is short-form clips and is optional. Run `fetch_youtube_transcripts.py josh-braun` if you want them.
 
 ## 3. Jed Mahrle, Founder, Practical Prospecting
 
@@ -89,18 +88,18 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 - Issue (Mar 15, 2026), *"How we've averaged a 30% reply rate across all clients"*
 - Issue (Feb 15, 2026), *"5 Ways to Find Your Competitors' Customers"*
-- Issue 129 (Feb 1, 2026), *"The 3 Phases of Every Cold Email Campaign"*
+- Issue 129 (Feb 1, 2026), *"The 3 Phases of Every Cold Email Campaign"* (https://content.practicalprospecting.io/p/129-the-3-phases-of-every-cold-email-campaign)
 - Issues from Jan 2026 on CTAs and A/B testing variables
 - Issue 122, *"How to Write Cold Emails That Don't Sound Like Cold Emails"*
 
-**Collection path:** `scrape_linkedin.py mahrle` for his LinkedIn. Newsletter archive is out of scope for this pass.
+**Collection path:** `scrape_linkedin.py mahrle` for his LinkedIn. Newsletter archive is documented above for reference but not collected into the repo (out of scope for this pass).
 
 ## 4. Florin Tatulea, Head of Sales Development, Common Room
 
 - **LinkedIn:** https://www.linkedin.com/in/florintatulea/ (LinkedIn Top Voice; ~74K followers)
 - **Background:** previously Barley, Loopio
 - **Primary channel:** LinkedIn
-- **Secondary:** Common Room blog and videos; guest on podcasts
+- **Secondary:** Common Room blog and videos (no own YouTube channel of substance)
 
 **Why included:** Currently *running* an SDR team. Publishes from inside, not from a training pulpit. Probably the clearest articulation of the "signal-based outbound" thesis.
 
@@ -108,12 +107,11 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Verified recent material:**
 
-- *The Revenue Leadership Podcast* ep. 31, *"The Rise of the 10X SDR"* with Kyle Norton
-- Common Room blog: *"3 signals every sales rep should leverage"* (Jul 2025)
+- Common Room blog: *"3 signals every sales rep should leverage"* (Jul 2025) (https://www.commonroom.io/blog/3-signals-every-sales-rep-should-leverage/)
 - Common Room blog and video: *"Plays that pay: how we deanonymize website activity to book more meetings"*
 - Common Room blog: *"Plays that pay: how we track job changes to fuel pipeline growth"*
 
-**Collection path:** `scrape_linkedin.py tatulea`. Save his guest-podcast episodes and Common Room pieces manually to `research/other/reports/common-room/`.
+**Collection path:** `scrape_linkedin.py tatulea`. Save Common Room pieces manually to `research/other/reports/common-room/`.
 
 ## 5. Will Allred, Co-founder, Lavender
 
@@ -141,6 +139,7 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 - *"Cold Email Wizardry 101: Understanding the Reader's Perspective"*
 - *"The Ultimate Compilation of Lavender Sales Email Frameworks"* (updated)
 - *"How to Build a Cold Email Personalization Process"*
+- LinkedIn post: *"What I learned from a cold email about Lavender"* (https://www.linkedin.com/posts/williamallred_lets-review-a-cold-email-i-sent-id-never-activity-7241420692619948032-jvbk)
 
 **Collection path:** `scrape_linkedin.py allred` for posts, manual paste the benchmark report into `research/other/reports/lavender/`.
 
@@ -149,7 +148,7 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 - **LinkedIn:** https://www.linkedin.com/in/leslievenetz (LinkedIn Editorial Top Voice for Sales; 2024 Sales Innovator of the Year)
 - **YouTube:** https://www.youtube.com/@LeslieVenetz (secondary)
 - **Website:** https://salesledgtm.com/
-- **Book:** *Profit-Generating Pipeline: A Proven Formula to Earn Trust and Drive Revenue*. **USA Today Top 50 bestseller** (2025).
+- **Book:** *Profit-Generating Pipeline: A Proven Formula to Earn Trust and Drive Revenue*. **USA Today Top 50 bestseller** (2025). https://salesledgtm.com/book/
 - **Primary channel:** LinkedIn
 - **Secondary:** Book, YouTube, weekly *Conversations with Leslie* series
 
@@ -159,9 +158,8 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Verified recent material:**
 
-- Guest on *Mark J. Carter* podcast (Jul 2025), *"The Power of Meaningful Sales Questions"*
-- Common Room interview and video: *"Beyond intent: top takeaways from Leslie Venetz"*
-- Weekly *Conversations with Leslie* series
+- Common Room interview and video: *"Beyond intent: top takeaways from Leslie Venetz"* (https://www.commonroom.io/blog/beyond-intent-leslie-venetz/)
+- Weekly *Conversations with Leslie* series (https://salesledgtm.com/conversations-with-leslie/)
 - The book. Treat as canonical artifact (chapter summaries in `research/other/reports/venetz-book/`)
 
 **Collection path:** `scrape_linkedin.py venetz` + `fetch_youtube_transcripts.py venetz` + book chapter notes.
@@ -179,8 +177,8 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Verified frameworks to capture:**
 
-- The **10/30/10 Video Prospecting Formula**
-- HubSpot: *"Using Video to Accelerate Your Sales Pipeline: Morgan Ingram's Master in Sales Series Part 1"*
+- The **10/30/10 Video Prospecting Formula** (https://www.30mpc.com/newsletter/morgan-ingrams-10-30-10-video-prospecting-formula)
+- HubSpot: *"Using Video to Accelerate Your Sales Pipeline: Morgan Ingram's Master in Sales Series Part 1"* (https://blog.hubspot.com/sales/morgan-ingram-video-sales)
 - JB Sales OnDemand webinars: *"How To Master The Art Of Video Prospecting"*, *"Video Prospecting Tactics with JB Sales & Vidyard"*
 
 **Collection path:** `fetch_youtube_transcripts.py morgan-ingram` is the main move. Plus `scrape_linkedin.py ingram`.
@@ -188,13 +186,12 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 ## 8. Nick Cegelski, Co-host, 30 Minutes to President's Club
 
 - **LinkedIn:** https://www.linkedin.com/in/nickcegelski/
-- **Podcast:** https://www.30mpc.com/podcast
-- **YouTube:** https://www.youtube.com/@30mpc (podcast-as-video)
-- **Book:** *Cold Calling Sucks (And That's Why It Works)*
-- **Primary channel:** Podcast
-- **Secondary:** LinkedIn, YouTube
+- **YouTube:** https://www.youtube.com/@30mpc
+- **Book:** *Cold Calling Sucks (And That's Why It Works)* (https://www.30mpc.com/the-book-on-cold-calling)
+- **Primary channel:** YouTube
+- **Secondary:** LinkedIn
 
-**Why included:** 3x top enterprise seller, still carrying quota. Tactics come from closing deals this quarter, not memory. Podcast format forces specific scripts.
+**Why included:** 3x top enterprise seller, still carrying quota. Tactics come from closing deals this quarter, not memory.
 
 **POV:** Tactical beats strategic. Problem-proposition framework: lead with a vivid, emotionally charged problem the buyer feels, *then* briefly show how you solve it. Generic "optimize/streamline/AI-powered" language fails.
 
@@ -203,17 +200,16 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 - The full 30MPC cold-call framework: opener, pitch, objection handling
 - The *"Heard the name tossed around"* opener technique
 - Why context-first openers outperform permission begging
-- Recent episodes breaking down why most cold-call pitches fail
+- Recent YouTube teardowns breaking down why most cold-call pitches fail
 
-**Collection path:** `fetch_youtube_transcripts.py 30mpc` + `scrape_linkedin.py cegelski`. Podcast show notes are synopsis-only and out of scope; the YouTube transcripts and LinkedIn posts carry the substantive material.
+**Collection path:** `fetch_youtube_transcripts.py 30mpc` + `scrape_linkedin.py cegelski`.
 
-## 9. Armand Farrokh, Co-host, 30 Minutes to President's Club; VP Sales, Pave
+## 9. Armand Farrokh, VP Sales, Pave
 
 - **LinkedIn:** https://www.linkedin.com/in/armand-farrokh/
-- **Co-host:** *30 Minutes to President's Club* (with Nick Cegelski and Mark Kosoglow)
 - **Book:** co-author of *Cold Calling Sucks (And That's Why It Works)*
-- **Primary channel:** Podcast
-- **Secondary:** LinkedIn
+- **Primary channel:** LinkedIn
+- **Secondary:** Book
 
 **Why included:** Became VP Sales at age 29 (ex-Carta, ex-Pave). Pairs with Nick: AE view plus VP view on the same tactic.
 
@@ -221,11 +217,11 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Specific content:**
 
-- Podcast episodes where he solo-hosts or shares Pave internals
+- LinkedIn posts where he shares Pave internals and SDR-team leadership takes
 - His breakdowns of hiring and training SDR teams
 - Recent LinkedIn posts on outbound as an *operating system* (not a cadence)
 
-**Collection path:** `scrape_linkedin.py farrokh`. Co-hosts the 30MPC podcast with Nick, but podcast show notes are out of scope; Armand's LinkedIn is the primary capture point here.
+**Collection path:** `scrape_linkedin.py farrokh`.
 
 ## 10. Kyle Coleman, Global VP Marketing, ClickUp *(recently moved from Copy.ai CMO)*
 
@@ -241,11 +237,11 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Specific content to capture from the Copy.ai era:**
 
-- *How will AI impact SDRs? Oddly accurate predictions by Kyle Coleman*
-- *2025 Cold Email Guide* on Copy.ai
-- *What You Need to Know About Outbound Sales Tools in 2025*
-- *The Future of AI-Driven Sales with Kyle Coleman & Tomasz Tunguz*
-- Keynote: *"How to Unify the GTM Using AI"*
+- *How will AI impact SDRs? Oddly accurate predictions by Kyle Coleman* (https://www.copy.ai/blog/how-will-ai-impact-sdrs-oddly-accurate-predictions-by-kyle-coleman)
+- *2025 Cold Email Guide* on Copy.ai (https://www.copy.ai/blog/cold-email-best-practices-guide-2024-edition)
+- *What You Need to Know About Outbound Sales Tools in 2025* (https://www.copy.ai/blog/outbound-sales-tools)
+- *The Future of AI-Driven Sales with Kyle Coleman & Tomasz Tunguz* (https://www.copy.ai/blog/the-future-of-ai-driven-sales)
+- Keynote: *"How to Unify the GTM Using AI"* (https://inaccord.com/blog-posts/keynote-with-copy-ai-cmo-kyle-coleman)
 
 **Collection path:** `scrape_linkedin.py coleman` + manual paste of the Copy.ai pieces into `research/other/reports/copy-ai/`.
 
