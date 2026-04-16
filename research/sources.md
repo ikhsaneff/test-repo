@@ -93,6 +93,77 @@ An earlier draft of this project assumed YouTube was a primary channel for all 1
 
 **Collection path:** `scrape_linkedin.py mahrle` for his LinkedIn. Newsletter archive is out of scope for this pass.
 
+## 4. Florin Tatulea, Head of Sales Development, Common Room
+
+- **LinkedIn:** https://www.linkedin.com/in/florintatulea/ (LinkedIn Top Voice; ~74K followers)
+- **Background:** previously Barley, Loopio
+- **Primary channel:** LinkedIn
+- **Secondary:** Common Room blog and videos; guest on podcasts
+
+**Why included:** Currently *running* an SDR team. Publishes from inside, not from a training pulpit. Probably the clearest articulation of the "signal-based outbound" thesis.
+
+**POV:** Shift from "Outbound 1.0" (spray-and-pray) to "Outbound 3.0" (signal-based + AI-powered precision). SDRs should focus on the 7% of prospects who know the problem and the 30% who could be educated into it.
+
+**Verified recent material:**
+
+- *The Revenue Leadership Podcast* ep. 31, *"The Rise of the 10X SDR"* with Kyle Norton
+- Common Room blog: *"3 signals every sales rep should leverage"* (Jul 2025)
+- Common Room blog and video: *"Plays that pay: how we deanonymize website activity to book more meetings"*
+- Common Room blog: *"Plays that pay: how we track job changes to fuel pipeline growth"*
+
+**Collection path:** `scrape_linkedin.py tatulea`. Save his guest-podcast episodes and Common Room pieces manually to `research/other/reports/common-room/`.
+
+## 5. Will Allred, Co-founder, Lavender
+
+- **LinkedIn:** https://www.linkedin.com/in/williamallred/
+- **Company blog:** https://www.lavender.ai/blog (data-backed frameworks)
+- **Primary channel:** LinkedIn
+- **Secondary:** Lavender's published benchmark reports
+
+**Why included:** Lavender sits on **billions** of sent emails and publishes benchmarks. Will's LinkedIn is the distilled version: word choice, length, sentiment rules, backed by numbers.
+
+**POV:** Short, emotionally aware, personalized emails outperform long or clever ones. Tone matters as much as content. Data beats intuition.
+
+**Verified data claims you can quote or test:**
+
+- Cold emails without big paragraphs get **83% more replies**
+- Detecting a single "informative" tone **reduces reply rates by 26%**
+- Personalized emails get **10x more replies** vs. automated templates
+- Operations: A-level emails reach **5.4% reply rate (+58% lift)**
+- HR is the hardest department: 3.4% average; A-level emails lift it to 4.3% (+27%)
+- Reply rates drop when an email has more than 1 question
+- Source: Lavender *Cold Email Benchmark Report* (231,818 emails analyzed)
+
+**Specific posts to grab:**
+
+- *"Cold Email Wizardry 101: Understanding the Reader's Perspective"*
+- *"The Ultimate Compilation of Lavender Sales Email Frameworks"* (updated)
+- *"How to Build a Cold Email Personalization Process"*
+
+**Collection path:** `scrape_linkedin.py allred` for posts, manual paste the benchmark report into `research/other/reports/lavender/`.
+
+## 6. Leslie Venetz, Founder, The Sales-Led GTM Agency
+
+- **LinkedIn:** https://www.linkedin.com/in/leslievenetz (LinkedIn Editorial Top Voice for Sales; 2024 Sales Innovator of the Year)
+- **YouTube:** https://www.youtube.com/@LeslieVenetz (secondary)
+- **Website:** https://salesledgtm.com/
+- **Book:** *Profit-Generating Pipeline: A Proven Formula to Earn Trust and Drive Revenue*. **USA Today Top 50 bestseller** (2025).
+- **Primary channel:** LinkedIn
+- **Secondary:** Book, YouTube, weekly *Conversations with Leslie* series
+
+**Why included:** Runs an agency that *executes* outbound for clients right now. 15+ years enterprise sales; 3x Head of Sales; has opened accounts like Walmart, JPMorgan, KraftHeinz.
+
+**POV:** *"Warm outbounding is just good outbounding."* Personalize based on identity, intent, and context. #EarnTheRight.
+
+**Verified recent material:**
+
+- Guest on *Mark J. Carter* podcast (Jul 2025), *"The Power of Meaningful Sales Questions"*
+- Common Room interview and video: *"Beyond intent: top takeaways from Leslie Venetz"*
+- Weekly *Conversations with Leslie* series
+- The book. Treat as canonical artifact (chapter summaries in `research/other/reports/venetz-book/`)
+
+**Collection path:** `scrape_linkedin.py venetz` + `fetch_youtube_transcripts.py venetz` + book chapter notes.
+
 ---
 
-Remaining entries (Tatulea, Allred, Venetz, Ingram, Cegelski, Farrokh, Coleman) still to fill in.
+Remaining entries (Ingram, Cegelski, Farrokh, Coleman) still to fill in, plus gaps section.
